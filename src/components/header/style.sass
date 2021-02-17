@@ -1,0 +1,35 @@
+.header
+    background-color: #2A2A2A
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding: vw(40)
+
+    @media (max-width: 1024px)
+        padding: vw(40, 1024)
+
+    &__devices
+        display: flex
+        align-items: center
+    
+    &__icon
+        width: vw(56)
+        height: vw(56)
+        margin-right: vw(32)
+        padding: vw(12)
+        border-radius: 4px
+
+        @media (max-width: 1024px)
+            width: vw(56, 1024)
+            height: vw(56, 1024)
+            margin-right: vw(20, 1024)
+            padding: vw(12, 1024)
+
+
+        &_active
+            background-color: #F87151
+
+        svg
+            max-width: 100%
+            max-height: 100%
+            object-fit: contain

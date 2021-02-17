@@ -1,0 +1,81 @@
+.home
+    &__content
+        padding: vw(120) vw(40)
+        display: flex
+        justify-content: center
+
+        @media (max-width: 1024px)
+            padding: vw(100, 1024)
+            flex-direction: column
+            align-items: center
+
+    &__image
+        width: vw(600)
+        margin-right: vw(80)
+        display: flex
+        align-items: flex-start
+        justify-content: flex-end
+
+        @media (max-width: 1024px)
+            width: vw(600, 1024)
+            margin-right: 0
+            margin-bottom: vw(60, 1024)
+
+        img
+            width: 100%
+            height: auto
+            object-fit: contain
+
+    &__info
+        max-width: vw(900)
+
+        @media (max-width: 1024px)
+            max-width: vw(600, 1024)
+
+    &__title
+        font-size: vw(76)
+        margin-bottom: vw(40)
+        font-weight: bold
+
+        @media (max-width: 1024px)
+            font-size: vw(62, 1024)
+            margin-bottom: vw(44, 1024)
+    
+    &__subtitle
+        font-size: vw(48)
+        margin-bottom: vw(40)
+        font-weight: bold
+
+        @media (max-width: 1024px)
+            font-size: vw(40, 1024)
+            margin-bottom: vw(44, 1024)
+    
+    &__full-text
+        font-size: vw(24)
+        margin-bottom: vw(40)
+
+        @media (max-width: 1024px)
+            font-size: vw(32, 1024)
+            margin-bottom: vw(44, 1024)
+    
+    &__button
+        cursor: pointer
+        font-size: vw(24)
+        font-weight: bold
+        display: inline-block
+        padding: vw(12) vw(32)
+        border: 2px solid #fff
+        border-radius: 2px
+        text-transform: uppercase
+        transition: .3s
+
+        @media (max-width: 1024px)
+            font-size: vw(32, 1024)
+            padding: vw(16, 1024) vw(36, 1024)
+
+        &:hover
+            color: #F87151
+            background-color: #fff
+        
+        &:active
+            transform: scale(.98)

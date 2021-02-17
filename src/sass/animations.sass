@@ -1,0 +1,38 @@
+//Анимация появления модалок слева
+.fromLeft-enter
+    transform: translateX(-100%)
+.fromLeft-enter-active
+    transition: 0.4s
+.fromLeft-enter-to
+    transform: translateX(0)
+.fromLeft-leave
+    transform: translateX(0)
+.fromLeft-leave-active
+    transition: 0.4s
+.fromLeft-leave-to
+    transform: translateX(-100%)
+
+    
+// анимация роутов
+.page-enter
+    transform: translateX(100%)
+.page-enter-active
+    transition: transform .6s, opacity .4s
+    transition-delay: .0s
+    // transform: translateX(100%)  
+    opacity: 0
+.page-enter-to
+    transform: translateX(0) 
+    background-attachment: scroll !important
+    height: 100vh
+    overflow: hidden
+    opacity: 1
+.page-leave
+    transform: translateX(0)
+.page-leave-active
+    transform: translateX(0)
+    position: absolute
+    transition: transform .6s, opacity .45s
+.page-leave-to
+    transform: translateX(-100%)
+    opacity: 0

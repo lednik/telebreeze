@@ -1,0 +1,65 @@
+.menu
+    position: fixed
+    top: 0
+    left: 0
+    padding: vw(120) 0
+    width: vw(480)
+    height: 100vh
+    background-color: #33414A
+
+    @media (max-width: 1024px) and (min-width: 768px)
+        width: vw(480, 1024)
+        padding: vw(120, 1024) 0
+
+    @media (max-width: 768px)
+        width: vw(260, 320)
+        padding: vw(48, 320) 0
+
+    &__item
+        margin-bottom: 2px
+        padding: vw(24) vw(40)
+        background-color: #2B3840
+        cursor: pointer
+        transition: .3s
+
+        @media (max-width: 1024px)
+            padding: vw(24, 1024) vw(40, 1024)
+
+        &:hover
+            color: #F87151
+
+            .arrow
+                border-color: #F87151
+                transform: translateX(6px) rotate(-45deg)
+
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: vw(8)
+
+    &__title
+        font-size: vw(32)
+
+        @media (max-width: 1024px)
+            font-size: vw(32, 1024)
+
+    &__subtitle
+        font-size: vw(24)
+        opacity: .7
+
+        @media (max-width: 1024px)
+            font-size: vw(24, 1024)
+
+.arrow
+    position: relative
+    width: vw(24)
+    height: vw(24)
+    border-right: 2px solid #fff
+    border-bottom: 2px solid #fff
+    transform: rotate(-45deg)
+    transition: .3s
+
+    @media (max-width: 1024px)
+        width: vw(24, 1024)
+        height: vw(24, 1024)
